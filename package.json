@@ -1,12 +1,19 @@
-condobot-meta/
-  src/
-    server.js
-    meta.js
-    verify.js
-  .env.example
-  .gitignore
-  package.json
-  README.md
-npm init -y
-npm i express axios dotenv
-npm i --save-dev nodemon
+{
+  "name": "condobot-meta",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
+
